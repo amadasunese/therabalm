@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h3 class="text-center">Welcome to a Self-Assessment Portal</h3>
+    <p class="lead text-center">Kindly answer the questions to help us serve you better. Your responses will enable us to make recommendations that are best for you.</p>
+    <form method="POST" action="/process_question">
+        {% for index, question in enumerated_questions %}
+        <div class="card mb-4">
+            <div class="card-body">
+                <p class="card-text">{{ question }}</p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="yes_{{ index }}" name="answer_{{ index }}" value="yes">
+                    <label class="form-check-label" for="yes_{{ index }}">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="no_{{ index }}" name="answer_{{ index }}" value="no">
+                    <label class="form-check-label" for="no_{{ index }}">No</label>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock %}
+
