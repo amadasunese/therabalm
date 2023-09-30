@@ -315,23 +315,24 @@ body {
 
 
 #home{
-    background-image: linear-gradient(rgba(4, 1, 36, 0.3),rgba(3, 2, 49, 0.9)),url("images/backgroud.jpg");
+   background-image: linear-gradient(rgba(4, 1, 36, 0.3),rgba(3, 2, 49, 0.9)),url("images/backgroud.jpg");
     width: 100%;
-    height: 40vw;
+    height: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 40px;
+    margin-bottom: 20px;
 }
 #home h2{
     color: #90ddf5;
-    font-size: 3.9rem;
+    font-size: 2.9rem;
     letter-spacing: 1px;
 }
 #home p{
-    width: 50%;
+    width: 100%;
     color: #90dff7;
     font-size: 1.3rem;
     line-height: 25px;
@@ -357,6 +358,9 @@ body {
 #home a.blue:hover{
     color:rgba(21,21,100);
     background: #fff;
+}
+.lead {
+	text-align: center !important;
 }
 
 /* blog */
@@ -434,6 +438,7 @@ body {
 
 #About p{
     color: #2c085c;
+    text-align: center;
 }
 
 
@@ -460,7 +465,7 @@ body {
 #about-home {
     background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("images/mental\ health\ 6.jpg");
     width: 100%;
-    height: 40vw;
+    height: 35vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,7 +477,7 @@ body {
 
 #about-home {
     color: #77dff1;
-    font-size: 2.4rem;
+    font-size: 3.4rem !important;
     letter-spacing: 1px;
 }
 #home a.red{
@@ -614,12 +619,12 @@ form
     align-items: center;
     justify-content: center;
     min-height: 50vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)),url(images/mental\ health\ 4.jpg);
+/*    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.7)),url(images/mental\ health\ 4.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding: 8vw 8vw 6vw 8vw;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 section form
 {
@@ -751,4 +756,12 @@ button:hover{
    text-align: center;
    padding: 10px 0;
    font-size: 14px;
+}
+.login-section {
+    background-color: #f0f0f0; /* You can change the color code to your preferred background color */
+    padding: 20px; /* Add padding to create space around the form */
+}
+.login-form-wrapper {
+    background-color: #434040; /* You can change the color code to your preferred background color */
+    padding: 20px; /* Add padding to create space around the form */
 }

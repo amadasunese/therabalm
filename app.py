@@ -56,7 +56,7 @@ def process_question():
     if score >= 1:
         return redirect(url_for('book_appointment'))
     else:
-        return redirect(url_for('faq_links'))
+        return redirect(url_for('faq'))
 
 @app.route('/faq')
 def faq():
