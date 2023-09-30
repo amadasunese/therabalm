@@ -765,3 +765,51 @@ button:hover{
     background-color: #434040; /* You can change the color code to your preferred background color */
     padding: 20px; /* Add padding to create space around the form */
 }
+
+
+/*------- testimonials ------*/
+.testimonials{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testionial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: grid;
+}
+
+.testimonials h1{
+    color: rgb(23, 3, 104);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.testionial-col img{
+    height: 75%;
+    margin-left: 5px;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.testionial-col p{
+    padding: 20px;
+}
+
+.testionial-col h3{
+    margin-top: 10px;
+    text-align: left;
+}
+@media(max-width: 700px){
+    .testionial-col img{
+        margin-right: 0px;
+        margin-right: 20px;
+    }
+}
